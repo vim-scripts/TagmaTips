@@ -4,10 +4,12 @@ This plugin uses the Tool Tip / Balloon functionality of Vim to display Tool
 Tips for code. Currently only Tcl and AWK are supported.
 
 Tool Tips are displayed for commands, variables and user defined procedures /
-functions. If spellchecking is enabled will also display possible corrections.
-The current buffer is checked for user defined procedures / functions when it
+functions. The current buffer is checked for user defined procedures / functions when it
 is written to disk.
 
 More information and screenshots (in the wiki) at: https://github.com/LStinson/TagmaTips
 
 Requires GVim 7 or later.
+
+I welcome any and all feedback. Please contact me at LoranceStinson AT Gmail....
+Please be sure to put TagmaTips in the subject so I know what you are emailing about.
