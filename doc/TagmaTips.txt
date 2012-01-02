@@ -23,9 +23,8 @@ Tips for code. Currently only Awl, Tcl and Vim are supported.
 DESCRIPTION					*TagmaTips-description*
 
 Tool Tips are displayed for commands, variables and user defined procedures /
-functions. If spellchecking is enabled will also display possible corrections.
-The current buffer is checked for user defined procedures / functions when it
-is written to disk.
+functions. The current buffer is checked for user defined procedures /
+functions when it is written to disk.
 
 See the GitHub URL above for more information and screenshots (in the wiki)
 
@@ -42,6 +41,9 @@ SUPPORTED TYPES					*TagmaTips-Types*
 AwK	Locates user defined functions.
 	Supports Awk variables and most primitives.
 
+PerlLocates user defined functions.
+	Supports most Perl primitives.
+
 Tcl	Locates user defined functions.
 	Supports most Tcl variables and primitives.
 
@@ -57,6 +59,14 @@ SETTINGS					*TagmaTips-settings*
 	Enables caching of Tool Tips data if the file type supports it.
 	Enabled by default. >
 	let g:TagmaTipsEnableCache = 1
+<
+
+*g:TagmaTipsLineLimit*
+	Limits the number of lines in the Tool Tips body.
+	If a tool tip body exceeds this number of lines it is truncated and
+	the last line is "...".
+	Defaults to 30 lines. >
+		let g:TagmaTipsLineLimit = 30
 <
 
 *g:TagmaTipsTypes*
